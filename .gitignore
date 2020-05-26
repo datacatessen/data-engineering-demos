@@ -1,0 +1,6 @@
+nifi/conf/archive
+nifi/*repository
+mariadb/
+hadoop/dfs/
+hadoop/logs/
+derby.log

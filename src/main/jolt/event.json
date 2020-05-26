@@ -1,0 +1,33 @@
+[
+    {
+        "operation": "shift",
+        "spec": {
+            "user": {
+                "id": "userid",
+                "name": "name",
+                "screen_name": "username",
+                "location": "location"
+            },
+            "text": "content"
+        }
+    },
+    {
+        "operation": "default",
+        "spec": {
+            "id": "twitter-${UUID()}",
+            "source": "twitter",
+            "userid": "",
+            "username": "",
+            "name": "",
+            "location": "",
+            "content": "",
+            "processingTime": "${now():toNumber()}"
+        }
+    },
+    {
+        "operation": "modify-overwrite-beta",
+        "spec": {
+            "processingTime": "=toLong"
+        }
+    }
+]

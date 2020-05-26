@@ -1,0 +1,39 @@
+{
+    "type": "record",
+    "namespace": "io.datacat.models.avro",
+    "name": "Event",
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "source",
+            "type": "string"
+        },
+        {
+            "name": "userid",
+            "type": "string"
+        },
+        {
+            "name": "username",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "location",
+            "type": "string"
+        },
+        {
+            "name": "content",
+            "type": "string"
+        },
+        {
+            "name": "processingTime",
+            "type": "long"
+        }
+    ]
+}
